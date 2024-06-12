@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(./aShinoXiaoyu/source/aShinoXiaoyu-set.css);
 
 /* 可选字体：
@@ -20,13 +21,15 @@
     /* 书写框的外边距 */
     --write-padding: 5px 5px 5px 5px;
     /* 书写框的内边距 */
-    --write-font-family: 'Arial';
+    /* --write-font-family: Consolas, "华康手札体W5P",  'Microsoft YaHei'; */
+    --write-font-family:  'Microsoft YaHei';
+    /* --write-font-family:  "华康手札体W5P",  'Microsoft YaHei'; */
     /* 全局的字体名称*/
-    --write-font-size: 13px;
+    --write-font-size: 18px;
     /* 全局的字体大小 */
-    --write-font-weight: 300;
+    --write-font-weight: 400;
     /* 全局的字体粗细 */
-    --write-line-height: 1.3;
+    --write-line-height: 1.35;
     /* 全局的行高 */
     --write-color: #000;
     /* 全局的字体颜色 */
@@ -53,7 +56,7 @@
     --yaml-padding: 10px;
     /* --yaml-font-family: 'XiaWuWenKai'; */
     --yaml-font-size: 1.0rem;
-    --yaml-font-weight: 200;
+    --yaml-font-weight: 400;
     --yaml-line-height: 1.2;
     --yaml-color: #000;
     --yaml-background-color: #f0f0f0;
@@ -73,7 +76,7 @@
     --toc-title-color: #000;
     /*--toc-content-font-family: 'SiYuan_HeiTi';     /* ----------设置目录内容---------- */
     --toc-content-font-size: 1.0rem;
-    --toc-content-font-weight: 300;
+    --toc-content-font-weight: 400;
     --toc-content-line-height: 1.2;
     --toc-content-color: #000;
     --toc-content-border-top: 2px dashed #000;
@@ -159,8 +162,8 @@
     --blockquote-padding: 10px;
     /* --blockquote-font-family: 'SiYuan_HeiTi'; */
     --blockquote-font-size: 1.0rem;
-    --blockquote-font-weight: 300;
-    --blockquote-line-height: 1.2;
+    --blockquote-font-weight: 400;
+    --blockquote-line-height: 1.35;
     --blockquote-border-left: 5px solid #006633;
     /* 默认引用块的左边框 */
     --blockquote-background-color: #edf1e4;
@@ -234,7 +237,7 @@
     --kbd-padding: 2px 4px;
     /* --kbd-font-family: 'Consolas'; */
     --kbd-font-size: 1.0rem;
-    --kbd-font-weight: 200;
+    --kbd-font-weight: 400;
     --kbd-color: #000;
     --kbd-background-color: #fff;
     --kbd-border-width: 2px;
@@ -331,7 +334,7 @@
     --order-list-padding: 0px;
     /* --order-list-font-family: 'SiYuan_HeiTi'; */
     --order-list-font-size: 1.0rem;
-    --order-list-font-weight: 300;
+    --order-list-font-weight: 400;
     --order-list-color: #000;
     --order-list-line-height: 1.3;
     /* 有序列表各项的行高 */
@@ -347,7 +350,7 @@
     --unorder-list-padding: 0px;
     /* --unorder-list-font-family: 'SiYuan_HeiTi'; */
     --unorder-list-font-size: 1.0rem;
-    --unorder-list-font-weight: 300;
+    --unorder-list-font-weight: 400;
     --unorder-list-color: #000;
     /* 无序列表的字体颜色 */
     --unorder-list-line-height: 1.3;
@@ -410,6 +413,6 @@
     /* 表格边框配置 */
     --table-th-font-weight: 600;
     /* 表格标题字粗 */
-    --table-td-font-weight: 300;
+    --table-td-font-weight: 400;
     /* 表格内容字粗 */
 }
