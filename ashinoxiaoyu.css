@@ -19,7 +19,7 @@
     /* write */
     --write-margin: 5px 5px 5px 5px;
     /* 书写框的外边距 */
-    --write-padding: 5px 5px 5px 5px;
+    --write-padding: 25px 100px 25px 100px;
     /* 书写框的内边距 */
     /* --write-font-family: Consolas, "华康手札体W5P",  'Microsoft YaHei'; */
     --write-font-family:  'Microsoft YaHei';
@@ -382,7 +382,7 @@
     --task-unselect-border-radius: 2px;
     --task-sign-width: 1.1rem;
     --task-sign-height: 1.1rem;
-    --task-sign-top: 5px;
+    --task-sign-top: 0px;
     /* 用于调整任务列表的符号的位置 */
     --task-sign-left: 0px;
     /* 用于调整任务列表的符号的位置 */
