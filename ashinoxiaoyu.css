@@ -22,7 +22,8 @@
     --write-padding: 25px 100px 25px 100px;
     /* 书写框的内边距 */
     /* --write-font-family: Consolas, "华康手札体W5P",  'Microsoft YaHei'; */
-    --write-font-family:  'Microsoft YaHei';
+    /* --write-font-family:  'Microsoft YaHei'; */
+    --write-font-family:  'Microsoft Sans Serif', 'Times New Roman', 'Microsoft YaHei';
     /* --write-font-family:  "华康手札体W5P",  'Microsoft YaHei'; */
     /* 全局的字体名称*/
     --write-font-size: 14px;
