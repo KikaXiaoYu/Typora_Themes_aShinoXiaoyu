@@ -443,3 +443,88 @@ h6:before {
     counter-increment: h6counter;
     content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) "." counter(h6counter) ". ";
 }
+
+
+/* ====================================================
+   Typora 左侧大纲视图 (Outline) 自动编号逻辑
+   ==================================================== */
+
+/* 1. 计数器重置逻辑 */
+/* 这里的逻辑是：H1 不编号（作为总标题），H2 开始为 1. */
+
+.outline-h1 {
+    counter-reset: h2_o;
+}
+
+.outline-h2 {
+    counter-reset: h3_o;
+}
+
+.outline-h3 {
+    counter-reset: h4_o;
+}
+
+.outline-h4 {
+    counter-reset: h5_o;
+}
+
+.outline-h5 {
+    counter-reset: h6_o;
+}
+
+/* 2. 编号显示规则 */
+
+/* H1 (一级标题) 在大纲中不显示编号，若需要显示请取消下面注释 */
+/*
+.outline-h1>.outline-item>.outline-label:before {
+    counter-increment: h1_o;
+    content: counter(h1_o) ". ";
+    font-weight: bold; 
+}
+*/
+
+/* H2 (二级标题) 显示为: 1. */
+.outline-h2>.outline-item>.outline-label:before {
+    counter-increment: h2_o;
+    content: counter(h2_o) ". ";
+    font-family: Consolas, monospace; /* 保持数字等宽，对齐好看 */
+    margin-right: 4px;
+}
+
+/* H3 (三级标题) 显示为: 1.1. */
+.outline-h3>.outline-item>.outline-label:before {
+    counter-increment: h3_o;
+    content: counter(h2_o) "." counter(h3_o) ". ";
+    font-family: Consolas, monospace;
+    margin-right: 4px;
+}
+
+/* H4 (四级标题) 显示为: 1.1.1. */
+.outline-h4>.outline-item>.outline-label:before {
+    counter-increment: h4_o;
+    content: counter(h2_o) "." counter(h3_o) "." counter(h4_o) ". ";
+    font-family: Consolas, monospace;
+    margin-right: 4px;
+}
+
+/* H5 (五级标题) 显示为: 1.1.1.1. */
+.outline-h5>.outline-item>.outline-label:before {
+    counter-increment: h5_o;
+    content: counter(h2_o) "." counter(h3_o) "." counter(h4_o) "." counter(h5_o) ". ";
+    font-family: Consolas, monospace;
+    margin-right: 4px;
+}
+
+/* H6 (六级标题) 显示为: 1.1.1.1.1. */
+.outline-h6>.outline-item>.outline-label:before {
+    counter-increment: h6_o;
+    content: counter(h2_o) "." counter(h3_o) "." counter(h4_o) "." counter(h5_o) "." counter(h6_o) ". ";
+    font-family: Consolas, monospace;
+    margin-right: 4px;
+}
+
+/* 3. 样式微调 */
+/* 避免大纲文字和编号挤在一起，增加一点左侧空间 */
+.outline-label {
+    /* 这里的 padding 并不是必须的，视你的视觉喜好而定 */
+}

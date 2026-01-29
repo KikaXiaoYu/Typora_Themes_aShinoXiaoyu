@@ -17,9 +17,9 @@
     /* 选中文本时文本的背景颜色 */
 
     /* write */
-    --write-margin: 5px 5px 5px 5px;
+    /* --write-margin: 5px 5px 5px 5px; */
     /* 书写框的外边距 */
-    --write-padding: 25px 100px 25px 100px;
+    --write-padding: 25px 25px 25px 25px;
     /* 书写框的内边距 */
     /* --write-font-family: Consolas, "华康手札体W5P",  'Microsoft YaHei'; */
     /* --write-font-family:  'Microsoft YaHei'; */
@@ -40,8 +40,10 @@
     /* 书写框的边框 */
     --write-border-radius: 0px;
     /* 书写框的边框圆角 */
-    --write-max-width: 100%;
+    /* --write-max-width: 80%; */
+    --write-max-width: 860px;
     /* 书写框的所占比例 */
+    --write-margin: 5px auto;
 
     /* favico */
     --favico-url: url(image/leimu.png);
